@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 日志级别以及优先级排序: OFF > FATAL > ERROR > WARN > INFO > DEBUG > TRACE > ALL -->
+<configuration status="WARN" monitorInterval="30">
+    <Properties>
+        <Property name="logFilePath">log</Property>
+        <Property name="rollingLogFilePath">logs</Property>
+        <Property name="logFileName">Mybatis.log</Property>
+    </Properties>
+    <appenders>
+        <console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss}] - [%p]  %m%n"/>
+        </console>
+    </appenders>
+
+    <loggers>
+        <root level="all">
+            <appender-ref ref="Console"/>
+        </root>
+    </loggers>
+</configuration>
