@@ -1,0 +1,6 @@
+````$(name)`suy`
+$(age)`18`
+$(json)`
+"name": ${na me},
+"age": ${age
+\```
